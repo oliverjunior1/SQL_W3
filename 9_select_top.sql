@@ -1,17 +1,31 @@
--- Syntax
--- DELETE FROM table_name WHERE condition;
+-- syntax
+-- SELECT TOP number|percent column_name(s)
+-- FROM table_name
+-- WHERE condition;
 
-DELETE FROM Customers 
-WHERE CustomerName = 'Alfreds Futterkiste';
+SELECT TOP 3 * FROM Customers;
 
+SELECT * FROM Customers
+LIMIT 3;
 
--- Delete all records
+-- Percent
+SELECT TOP 50 PERCENT * FROM Customers;
 
-DELETE FROM Customers;
+SELECT * FROM Customers 
+FETCH FIRST 50 PERCENT ROWS ONLY;
 
+SELECT TOP 3 * FROM Customers
+WHERE Country='Germany';
 
--- delete the customer table
+SELECT * FROM Customers
+WHERE Country = 'Germany'
+LIMIT 3;
 
-DROP TABLE Customers;
+SELECT * FROM Customers
+WHERE Country = 'Germany'
+FETCH FIRST 3 ROWS ONLY;
 
-   
+SELECT * FROM Customers
+ORDER BY CustomerName DESC
+LIMIT 3;
+
