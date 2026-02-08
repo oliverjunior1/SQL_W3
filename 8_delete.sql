@@ -1,16 +1,17 @@
-UPDATE Customers
-SET ContactName = 'Alfred Schmidt', City = 'Frankfurt'
-WHERE CustomerID = 1;
+-- Syntax
+-- DELETE FROM table_name WHERE condition;
 
--- Multiple Record
-UPDATE Customers
-SET ContactName = 'Juan'
-WHERE Country = 'Mexico';
-
--- Update Warning cause: all records will be updated
-UPDATE Customers
-WHERE ContactName = 'Juan';
+DELETE FROM Customers 
+WHERE CustomerName = 'Alfreds Futterkiste';
 
 
+-- Delete all records
+
+DELETE FROM Customers;
 
 
+-- delete the customer table
+
+DROP TABLE Customers;
+
+   
