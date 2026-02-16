@@ -15,3 +15,6 @@ FROM Products;
 SELECT MIN(Price) AS SmallestPrice
 FROM Products;
 
+SELECT MIN(Price) AS SmallestPrice, CategoryID
+FROM Products
+GROUP BY CategoryID;
