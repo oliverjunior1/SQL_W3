@@ -15,3 +15,8 @@ FETCH FIRST 50 PERCENT ROWS ONLY;
 
 SELECT TOP 3 * FROM Customers
 WHERE Country = 'Germany';
+
+SELECT * FROM Customers
+WHERE Country = 'Germany'
+LIMIT 3;
+
