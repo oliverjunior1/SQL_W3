@@ -7,3 +7,7 @@ FROM Products;
 
 SELECT COUNT(ProductName)
 FROM Products;
+
+SELECT COUNT(ProducID)
+FROM Products
+WHERE Price > 20; 
