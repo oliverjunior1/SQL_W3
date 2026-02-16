@@ -20,3 +20,6 @@ SELECT * FROM Customers
 WHERE Country = 'Germany'
 LIMIT 3;
 
+SELECT * FROM Customers
+WHERE Country = 'Germany'
+FETCH FIRST 3 ROWS ONLY;
