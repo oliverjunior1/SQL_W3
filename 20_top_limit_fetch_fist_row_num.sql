@@ -30,3 +30,7 @@ ORDER BY CustomerName DESC;
 SELECT * FROM Customers
 ORDER BY CustomerName DESC
 LIMIT 3;
+
+SELECT * FROM Customers
+ORDER BY CustomerName DESC
+FETCH FIRST 3 ROWS ONLY;
