@@ -4,3 +4,6 @@ SELECT TOP 3 * FROM Customers;
 SELECT * FROM Customers
 LIMIT 3;
 
+SELECT * FROM Customers
+FETCH FIRST 3 ROWS ONLY;
+
