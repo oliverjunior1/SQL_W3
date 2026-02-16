@@ -23,3 +23,6 @@ LIMIT 3;
 SELECT * FROM Customers
 WHERE Country = 'Germany'
 FETCH FIRST 3 ROWS ONLY;
+
+SELECT TOP 3 * FROM Customers
+ORDER BY CustomerName DESC;
