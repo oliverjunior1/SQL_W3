@@ -26,3 +26,7 @@ FETCH FIRST 3 ROWS ONLY;
 
 SELECT TOP 3 * FROM Customers
 ORDER BY CustomerName DESC;
+
+SELECT * FROM Customers
+ORDER BY CustomerName DESC
+LIMIT 3;
