@@ -18,3 +18,7 @@ GROUP BY OrderID;
 
 SELECT SUM(Quantity * 20)
 FROM OrderDetails;
+
+SELECT SUM(Price * Quantity)
+FROM OrderDetails
+LEFT JOIN Products ON OrderDetails.ProductID = Products.ProductID;
