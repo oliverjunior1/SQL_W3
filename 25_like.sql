@@ -25,3 +25,6 @@ WHERE CustomerName LIKE 'b%s';
 
 SELECT * FROM Customers
 WHERE CustomerName LIKE '%or%';
+
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'a__%';
