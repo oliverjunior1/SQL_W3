@@ -1,13 +1,13 @@
--- SELECT COUNT(column_name)
+-- SELECT SUM(column_name)
 -- FROM table_name
---WHERE condition;
+-- WHERE condition;
 
-SELECT COUNT(*)
-FROM Products;
+SELECT SUM(Quantity)
+FROM OrderDetails;
 
-SELECT COUNT(ProductName)
-FROM Products;
+SELECT SUM(Quantity)
+FROM OrderDetails
+WHERE ProductID = 11;
 
-SELECT COUNT(ProducID)
-FROM Products
-WHERE Price > 20; 
+SELECT SUM(Quantity) AS total
+FROM OrderDetails;
