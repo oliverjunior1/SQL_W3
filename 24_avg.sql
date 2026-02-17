@@ -8,3 +8,7 @@ FROM Products;
 SELECT AVG(Price)
 FROM Products
 WHERE CategoryID = 1;
+
+SELECT AVG(Price)
+AS [average price]
+FROM Products;
