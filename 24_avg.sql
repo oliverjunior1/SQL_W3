@@ -15,3 +15,7 @@ FROM Products;
 
 SELECT * FROM Products
 WHERE price > (SELECT AVG(Price) FROM Products);
+
+SELECT AVG(Price) AS AveragePrice, CategoryID
+FROM Products
+GROUP BY CategoryID;
