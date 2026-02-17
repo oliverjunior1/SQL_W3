@@ -4,3 +4,6 @@
 
 SELECT * FROM Customers
 WHERE CustomerName LIKE 'a%';
+
+SELECT * FROM Customers
+WHERE city LIKE 'L_nd__';
