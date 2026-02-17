@@ -13,3 +13,6 @@ WHERE city LIKE '%L%';
 
 SELECT * FROM Customers
 WHERE CustomerName LIKE 'La%';
+
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'a%' OR CustomerName LIKE 'b%';
