@@ -19,3 +19,6 @@ WHERE CustomerName LIKE 'a%' OR CustomerName LIKE 'b%';
 
 SELECT * FROM Customers
 WHERE CustomerName LIKE 'a%';
+
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'b%s';
