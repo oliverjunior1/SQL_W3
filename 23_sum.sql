@@ -11,3 +11,10 @@ WHERE ProductID = 11;
 
 SELECT SUM(Quantity) AS total
 FROM OrderDetails;
+
+SELECT OrderID, SUM(Quantity) AS [Total Quantity]
+FROM OrderDetails
+GROUP BY OrderID;
+
+SELECT SUM(Quantity * 20)
+FROM OrderDetails;
