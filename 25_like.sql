@@ -34,3 +34,4 @@ WHERE CustomerName LIKE '_r%';
 
 SELECT * FROM Customers
 WHERE Country LIKE 'Spain';
+
