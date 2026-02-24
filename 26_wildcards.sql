@@ -19,3 +19,6 @@ WHERE CustomerName LIKE 'es%';
 SELECT * FROM Customers
 WHERE CustomerName LIKE '%mer%';
 
+-- The _ wildcard represents a single character.
+SELECT * FROM Customers
+WHERE City LIKE '_ondon';
