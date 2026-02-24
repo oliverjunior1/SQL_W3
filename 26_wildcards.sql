@@ -31,4 +31,9 @@ WHERE City LIKE 'L___on';
 SELECT * FROM Customers
 WHERE CustomerName LIKE '[bsp]%';
 
+-- The - wildcard allows you to specify a range of characters inside the [] wildcard.
+SELECT * FROM Customers
+WHERE CustomerName LIKE '[a-f]%';
+
+
 
