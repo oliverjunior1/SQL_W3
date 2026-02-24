@@ -35,5 +35,11 @@ WHERE CustomerName LIKE '[bsp]%';
 SELECT * FROM Customers
 WHERE CustomerName LIKE '[a-f]%';
 
+-- Any wildcard, like % and _ , can be used in combination with other wildcards.
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'a__%';
+
+
+
 
 
