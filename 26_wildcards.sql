@@ -11,3 +11,8 @@ _	Represents a single character
 SELECT * FROM Customers
 WHERE CustomerName LIKE 'a%';
 
+-- The % wildcard represents any number of characters, even zero characters.
+
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'es%';
+
