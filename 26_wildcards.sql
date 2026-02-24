@@ -25,3 +25,10 @@ WHERE City LIKE '_ondon';
 
 SELECT * FROM Customers
 WHERE City LIKE 'L___on';
+
+-- The [] wildcard returns a result if any of the characters inside gets a match.
+
+SELECT * FROM Customers
+WHERE CustomerName LIKE '[bsp]%';
+
+
